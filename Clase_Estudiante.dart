@@ -14,6 +14,7 @@ this.nota1,
 this.nota2,
 this.nota3,);
 
+
 double calcularPromedio(){
   return (nota1 + nota2 + nota3) /3;
  } 

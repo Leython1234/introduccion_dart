@@ -4,15 +4,15 @@ class Producto {
   double precio;
   int cantidad;
 
-  // 3. Constructor para inicializar los datos
+
   Producto(this.nombre, this.categoria, this.precio, this.cantidad);
 
-  // 5. Método para calcular el subtotal
+  
   double calcularSubtotal() {
     return precio * cantidad;
   }
 
-  // 6. Método para determinar el estado del stock según las reglas
+  
   String determinarEstadoStock() {
     if (cantidad == 0) {
       return "SIN STOCK";
@@ -23,7 +23,7 @@ class Producto {
     }
   }
 
-  // 4. Método para mostrar toda la información
+ 
   void mostrarInformacion() {
     print("========= PRODUCTO =========");
     print("Producto: $nombre");
@@ -38,12 +38,12 @@ class Producto {
 }
 
 void main() {
-  // 7. Creación de como mínimo 3 productos diferentes utilizando el constructor
+
   Producto producto1 = Producto("Laptop Lenovo", "Tecnología", 2500.00, 3);
   Producto producto2 = Producto("Mouse Logitech", "Accesorios", 80.00, 10);
   Producto producto3 = Producto("Audífonos Sony", "Audio", 120.50, 0);
 
-  // Ejecución de los métodos para mostrar los resultados
+ 
   producto1.mostrarInformacion();
   producto2.mostrarInformacion();
   producto3.mostrarInformacion();
